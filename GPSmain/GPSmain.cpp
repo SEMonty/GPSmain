@@ -7,10 +7,15 @@
 #include "opencv2/highgui.hpp"
 #include "opencv2/imgproc.hpp"
 
+
+#include "../packages/aruco-2.0.19/src/aruco.h"
+#include "../packages/aruco-2.0.19/src/cvdrawingutils.h"
+
 #include <iostream>
 
 using namespace cv;
 using namespace std;
+using namespace aruco;
 
 int main()
 {
@@ -37,6 +42,8 @@ int main()
 	int HEIGHT = cap.get(CAP_PROP_FRAME_HEIGHT);
 
 
+	MarkerDetector MDetector;
+	vector<Marker> Markers;
 	while (1) {
 		Mat frame;
 		Mat cvt_frame;
@@ -47,14 +54,26 @@ int main()
 		//putText(frame, text, Point(50, 50), FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0), 2, 8, false);
 
 
+		//////////////////Marker Detection//////////////////
+
+		//Ok, let's detect
+		MDetector.detect(frame, Markers);
+		//for each marker, draw info and its boundaries in the image
+		for (unsigned int i = 0; i<Markers.size(); i++) {
+			cout << Markers[i] << endl;
+			Markers[i].draw(frame, Scalar(0, 0, 255), 2);
+		}
+
 		//////////////////キャリブレーション//////////////////
-		//チェッカーボードを印刷しないと・・・。試してない
+		//チェッカーボードを印刷しないと・・・。試してない。
+		//ARUCOにもカメラパラメータを渡すはず。渡してるサンプルはあった。
 
 		///////////////////////色変換/////////////////////////
 		//cv::cvtColor(frame, cvt_frame, COLOR_RGB2HSV);
 
 
 		//////////////////////透視変換///////////////////////
+		/*
 		// 変換前の画像での座標
 		const Point2f src_pt[] = {
 			Point2f(360 , 69),
@@ -78,8 +97,8 @@ int main()
 		// 透視変換
 		//warpPerspective(frame, cvt_frame, homography_matrix,frame.size());
 
-
-		//////////////表示系
+		*/
+		//////////////表示
 		imshow("window", frame);
 
 
