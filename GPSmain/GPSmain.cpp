@@ -8,8 +8,8 @@
 #include "opencv2/imgproc.hpp"
 
 
-#include "../packages/aruco-2.0.19/src/aruco.h"
-#include "../packages/aruco-2.0.19/src/cvdrawingutils.h"
+#include "aruco-2.0.19/src/aruco.h"
+#include "aruco-2.0.19/src/cvdrawingutils.h"
 
 #include <iostream>
 

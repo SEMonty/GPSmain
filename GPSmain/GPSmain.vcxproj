@@ -142,43 +142,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="..\packages\aruco-2.0.19\src\CMakeLists.txt" />
+    <Text Include="aruco-2.0.19\src\CMakeLists.txt" />
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\packages\aruco-2.0.19\src\aruco.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\ar_omp.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\cameraparameters.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\checkrectcontour.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\cvdrawingutils.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\dictionary.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\exports.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\ippe.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\levmarq.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\marker.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\markerdetector.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\markerlabeler.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\markerlabelers\dictionary_based.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\markerlabelers\svmmarkers.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\markermap.h" />
-    <ClInclude Include="..\packages\aruco-2.0.19\src\posetracker.h" />
+    <ClInclude Include="aruco-2.0.19\src\aruco.h" />
+    <ClInclude Include="aruco-2.0.19\src\ar_omp.h" />
+    <ClInclude Include="aruco-2.0.19\src\cameraparameters.h" />
+    <ClInclude Include="aruco-2.0.19\src\checkrectcontour.h" />
+    <ClInclude Include="aruco-2.0.19\src\cvdrawingutils.h" />
+    <ClInclude Include="aruco-2.0.19\src\dictionary.h" />
+    <ClInclude Include="aruco-2.0.19\src\exports.h" />
+    <ClInclude Include="aruco-2.0.19\src\ippe.h" />
+    <ClInclude Include="aruco-2.0.19\src\levmarq.h" />
+    <ClInclude Include="aruco-2.0.19\src\marker.h" />
+    <ClInclude Include="aruco-2.0.19\src\markerdetector.h" />
+    <ClInclude Include="aruco-2.0.19\src\markerlabeler.h" />
+    <ClInclude Include="aruco-2.0.19\src\markerlabelers\dictionary_based.h" />
+    <ClInclude Include="aruco-2.0.19\src\markerlabelers\svmmarkers.h" />
+    <ClInclude Include="aruco-2.0.19\src\markermap.h" />
+    <ClInclude Include="aruco-2.0.19\src\posetracker.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\packages\aruco-2.0.19\src\ar_omp.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\cameraparameters.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\checkrectcontour.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\cvdrawingutils.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\dictionary.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\ippe.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\marker.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\markerdetector.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\markerlabeler.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\markerlabelers\dictionary_based.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\markerlabelers\svmmarkers.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\markermap.cpp" />
-    <ClCompile Include="..\packages\aruco-2.0.19\src\posetracker.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\ar_omp.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\cameraparameters.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\checkrectcontour.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\cvdrawingutils.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\dictionary.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\ippe.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\marker.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\markerdetector.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\markerlabeler.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\markerlabelers\dictionary_based.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\markerlabelers\svmmarkers.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\markermap.cpp" />
+    <ClCompile Include="aruco-2.0.19\src\posetracker.cpp" />
     <ClCompile Include="GPSmain.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
